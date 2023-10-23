@@ -1,0 +1,28 @@
+@using Assignment_Dojo_Survey_with_Validation.Models
+@model Survey
+@{
+    ViewData["Title"] = "Home Controller Result";
+}
+
+<div class="data">
+    <h1>Submited Info</h1>
+    <div class="blocks">
+        <p>Name</p>
+        <p id="name">@Model.Name</p>
+    </div>
+    <div class="blocks">
+        <p>Dojo Location</p>
+        <p id="location">@Model.Location</p>
+    </div>
+    <div class="blocks">
+        <p>Favorite Language</p>
+        <p id="favorite">@Model.Language</p>
+    </div>
+    <div class="blocks blockstextarea">
+        <p>Comment</p>
+        <p id="comment">@Model.Comment</p>
+    </div>
+    <div class="blocks">
+        <button type="button" class="btn1">Back</button>
+    </div>
+</div>
